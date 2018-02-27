@@ -21,13 +21,12 @@ class MusicLibraryController
     puts "What would you like to do?"
     input = gets.strip
     until input == "exit"
-      puts "What would you like to do?"
-
       binding.pry
       if input === 'list songs'
         binding.pry
         list_songs
       end
+      puts "What would you like to do?"
       input = gets.strip
 
 
